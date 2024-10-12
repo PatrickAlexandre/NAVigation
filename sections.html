@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Catégories de Vie</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+    <style>
+        body{font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,sans-serif;background-color:#f9f9f9;margin:0;padding:0;color:#333;line-height:1.6;touch-action:manipulation;}
+        h1{font-size:2rem;text-align:center;margin:20px 0;color:#1d1d1f;letter-spacing:1px;font-weight:700;}
+        section{margin:10px auto;max-width:90%;background-color:#fff;border-radius:10px;box-shadow:0 2px 8px rgba(0,0,0,0.1);padding:10px;transition:all 0.2s ease-in-out;}
+        h2{font-size:1.2rem;color:#0070c9;cursor:pointer;padding:5px;margin-bottom:10px;}
+        h2:hover{color:#005bb5;}
+        ul{list-style-type:none;padding:0;margin:0;display:none;}
+        ul li{padding:10px;font-size:0.95rem;border-bottom:1px solid #e0e0e0;transition:background-color 0.2s;}
+        ul li:hover{background-color:#f0f8ff;}
+        ul li:last-child{border-bottom:none;}
+        button{background-color:#f7f7fa;color:#222;border:none;border-radius:8px;padding:10px 16px;font-size:0.85rem;cursor:pointer;box-shadow:0 4px 8px rgba(0,0,0,0.1);transition:background-color 0.2s;}
+        button:hover{background-color:#ededf5;}
+        @media (max-width:768px){h1{font-size:1.6rem;}section{padding:8px;}ul li{padding:8px;font-size:0.85rem;}}
+        ul.visible{display:block;}
+    </style>
+</head>
+<body>
+    <header><h1>Catégories de Vie</h1></header>
+    <main>
+        <section><h2>📈💡 Productivité & Développement Personnel</h2><ul><li>Productivité</li><li>Million Dollar Morning</li><li>S.A.V.E.R.S</li><li>Dynalist</li><li>Calendrier</li><li>Rappels</li><li>Suivi mensuel (cases)</li></ul></section>
+        <section><h2>🥗🏋️‍♂️ Santé, Nutrition & Bien-être</h2><ul><li>Sous Chef</li><li>Menus de la semaine</li><li>Poids Idéal</li><li>Besoin en calories</li><li>IMC</li><li>100 activités</li><li>Open Food Facts</li></ul></section>
+        <section><h2>🗣️📱 Relations & Communication</h2><ul><li>Amis & Famille</li><li>Réseaux Sociaux</li><li>Google Contacts</li><li>Anniversaires & Rappels</li></ul></section>
+        <section><h2>🎨📚 Loisirs & Créativité</h2><ul><li>Hobbies</li><li>Créations artistiques</li><li>Photopea</li><li>Adobe Express</li><li>Buffer</li><li>Projets personnels</li></ul></section>
+        <section><h2>💰📊 Finances & Gestion personnelle</h2><ul><li>Linxo</li><li>Suivi des dépenses</li><li>Objectifs financiers</li></ul></section>
+        <section><h2>🤖💻 IA et Outils Numériques</h2><ul><li>ChatGPT<ul><li>Sous Chef</li><li>Dalle</li><li>Leo</li><li>Screenshot to Code</li></ul></li><li>Raccourcis</li><li>Calculatrices<ul><li><a href="https://www.imc.fr" target="_blank"><i class="fas fa-analytics fa-fw"></i>IMC</a></li><li><a href="https://www.poidsideal.com" target="_blank"><i class="fas fa-weight fa-fw"></i>Poids idéal</a></li><li><a href="https://www.calories.fr" target="_blank"><i class="fas fa-utensils fa-fw"></i>Calories</a></li></ul></li></ul></section>
+    </main>
+    <footer><p>&copy; 2024 - Développement personnel, santé, finances, outils numériques.</p></footer>
+    <script>
+        document.querySelectorAll('h2').forEach(header=>{header.addEventListener('click',()=>{const ul=header.nextElementSibling;ul.classList.toggle('visible');});});
+    </script>
+</body>
+</html>
