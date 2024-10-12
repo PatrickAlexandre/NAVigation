@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Page Responsive - Temps, Santé, Argent</title>
+    <style>
+        /* Container principal */
+        .container {
+            display: grid;
+            grid-template-columns: 1fr;
+            gap: 20px;
+            padding: 10px;
+        }
+
+        /* Style pour les sections */
+        section {
+            background-color: #f9f9f9;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+        }
+
+        /* Style pour les titres */
+        h2 {
+            font-size: 24px;
+            margin-bottom: 10px;
+        }
+
+        /* Style pour les listes */
+        ul {
+            margin: 10px 0;
+            padding: 0;
+            list-style-type: none;
+        }
+
+        ul li {
+            margin: 8px 0;
+        }
+
+        /* Style pour les boutons */
+        .cta-button {
+            display: inline-block;
+            margin-top: 10px;
+            padding: 10px 20px;
+            background-color: #007bff;
+            color: #fff;
+            text-decoration: none;
+            border-radius: 5px;
+        }
+
+        .cta-button:hover {
+            background-color: #0056b3;
+        }
+
+        /* Media query pour les écrans plus larges (tablettes et ordinateurs) */
+        @media (min-width: 768px) {
+            .container {
+                grid-template-columns: 1fr 1fr;
+            }
+        }
+
+        @media (min-width: 1024px) {
+            .container {
+                grid-template-columns: repeat(3, 1fr);
+            }
+        }
+    </style>
+</head>
+<body>
+
+<div class="container">
+    <section id="temps">
+        <h2>⏰ Temps</h2>
+        <ul>
+            <li><strong>Pourquoi :</strong> Une bonne gestion du temps permet d'améliorer la productivité et de réduire le stress.</li>
+            <li><strong>Comment :</strong> Utilisez des outils comme des listes, des rappels, et des raccourcis pour mieux gérer votre emploi du temps.</li>
+            <li><strong>Quoi :</strong> Découvrez des méthodes comme "The Million Dollar Morning" et "S.A.V.E.R.S" pour organiser vos journées.</li>
+        </ul>
+        <a href="#" class="cta-button">En savoir plus sur la gestion du temps</a>
+        <ul>
+            <li>Listes</li>
+            <li>Rappels</li>
+            <li>IA</li>
+            <li>Raccourcis</li>
+            <li>Productivité</li>
+            <li>The Million Dollar Morning</li>
+            <li>S.A.V.E.R.S</li>
+            <li>Suivi mensuel</li>
+            <li>Calendrier</li>
+            <li>100 activités à faire</li>
+        </ul>
+    </section>
+
+    <section id="sante">
+        <h2>💪 Santé</h2>
+        <ul>
+            <li><strong>Pourquoi :</strong> Prendre soin de sa santé améliore la qualité de vie et prévient les maladies.</li>
+            <li><strong>Comment :</strong> En adoptant une alimentation équilibrée et en suivant les conseils pour une meilleure forme physique.</li>
+            <li><strong>Quoi :</strong> Consultez des ressources comme Poids Idéal, IMC, et des outils de suivi nutritionnel.</li>
+        </ul>
+        <a href="#" class="cta-button">Découvrir nos conseils santé</a>
+        <ul>
+            <li><a href="https://www.poidsideal.com/" target="_blank">Poids Idéal</a></li>
+            <li><a href="https://www.imc.fr/" target="_blank">IMC</a></li>
+            <li><a href="https://www.calories.fr/besoin-en-calories.htm" target="_blank">Besoin en calories</a></li>
+            <li><a href="https://world.openfoodfacts.org/cgi/search.pl" target="_blank">Open Food Facts</a></li>
+            <li>Menus de la semaine</li>
+            <li>Sous Chef</li>
+        </ul>
+    </section>
+
+    <section id="argent">
+        <h2>💰 Argent</h2>
+        <ul>
+            <li><strong>Pourquoi :</strong> Bien gérer ses finances permet d'atteindre ses objectifs financiers et d'éviter les dettes.</li>
+            <li><strong>Comment :</strong> Utilisez des outils de gestion financière comme Linxo, et suivez vos dépenses avec des tableaux et graphiques.</li>
+            <li><strong>Quoi :</strong> Découvrez des solutions pour suivre et optimiser vos finances personnelles.</li>
+        </ul>
+        <a href="#" class="cta-button">Explorez des astuces pour gérer votre argent</a>
+        <ul>
+            <li>Linxo</li>
+            <li>Tableau</li>
+            <li>Graphiques</li>
+        </ul>
+    </section>
+</div>
+
+</body>
+</html>
