@@ -1,0 +1,145 @@
+/* 🌐 Style global pour le corps de la page */
+body {
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+    background-color: #f9f9f9;
+    margin: 0;
+    padding: 0;
+    color: #333;
+    line-height: 1.6;
+}
+
+/* 🎯 Style du titre principal */
+h1 {
+    font-size: 2.5rem;
+    text-align: center;
+    margin-top: 40px;
+    color: #1d1d1f;
+}
+
+
+
+        /* 🗂️ Section générale 📦 */
+        section {
+            margin: 20px auto;
+            max-width: 800px;
+            background-color: #fff;
+            border-radius: 20px;
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+            padding: 20px;
+        }
+
+
+
+/* 🖋️ Style des sous-titres */
+h2 {
+    font-size: 1.5rem;
+    margin-bottom: 15px;
+    color: #0070c9;
+    cursor: pointer;
+}
+
+/* 📝 Style des listes */
+ul {
+    list-style-type: none;
+    padding-left: 0;
+    display: block; /* Affiché par défaut */
+}
+
+/* 🔗 Style des éléments de liste */
+ul li {
+    padding: 8px 0;
+    font-size: 1rem;
+    border-bottom: 1px solid #eaeaea;
+    transition: all 0.3s ease;
+}
+
+ul li:hover {
+    background-color: #f0f8ff;
+    transform: scale(1.05);
+    cursor: pointer;
+}
+
+/* 🚫 Suppression de la bordure pour le dernier élément de la liste */
+ul li:last-child {
+    border-bottom: none;
+}
+
+/* 🎛️ Style des boutons ultra compacts pour mobile */
+button {
+  /* Apparence générale */
+  background-color: #f7f7fa; /* Couleur neutre claire, presque blanche pour un look épuré */
+  color: #222; /* Couleur de texte bien contrastée pour une lisibilité optimale sur mobile */
+  border: none; /* Pas de bordure pour un design minimaliste */
+  border-radius: 8px; /* Bordure arrondie, mais plus compacte pour réduire l'espace */
+  padding: 10px 16px; /* Moins de padding pour maximiser l'espace tout en restant accessible au toucher */
+  font-size: 0.9rem; /* Police légèrement plus petite pour s'adapter aux écrans réduits */
+  font-weight: 600; /* Texte en semi-gras pour une meilleure lisibilité sur petits écrans */
+  text-transform: uppercase; /* Majuscules pour l'importance et la clarté */
+  letter-spacing: 1px; /* Espacement des lettres légèrement réduit pour économiser l'espace */
+  cursor: pointer; /* Le curseur change en pointeur (utile en desktop mobile simulé) */
+
+  /* Effet de profondeur et de lumière adapté au mobile */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1), 0 2px 4px rgba(0, 0, 0, 0.05); /* Ombre plus subtile pour des interfaces légères */
+  transition: all 0.2s ease-in-out; /* Transitions plus rapides pour une meilleure réactivité mobile */
+}
+
+/* Effet au survol (hover) pour écrans tactiles */
+button:hover {
+  background-color: #ededf5; /* Couleur légèrement plus foncée pour montrer l'interaction sans être agressive */
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.12), 0 3px 6px rgba(0, 0, 0, 0.06); /* Ombre modérément augmentée pour un effet léger mais perceptible */
+}
+
+/* Effet lors du clic */
+button:active {
+  transform: translateY(0); /* Revenir à la position de base après l'appui */
+  box-shadow: 0 3px 6px rgba(0, 0, 0, 0.15), 0 2px 4px rgba(0, 0, 0, 0.08); /* Ombres plus subtiles pour indiquer l'appui */
+}
+
+/* Style pour les boutons désactivés */
+button:disabled {
+  background-color: #d4d4d4; /* Couleur désactivée plus visible sur mobile */
+  color: #888; /* Texte désactivé avec un contraste suffisant pour rester lisible */
+  cursor: not-allowed; /* Indicateur de désactivation */
+  box-shadow: none; /* Pas d'ombre pour un bouton désactivé */
+  opacity: 0.5; /* Plus de transparence pour bien marquer l'état désactivé */
+}
+
+/* Style responsive pour mobile */
+@media (max-width: 600px) {
+  button {
+    padding: 8px 12px; /* Padding réduit pour une optimisation maximale sur écran mobile */
+    font-size: 0.85rem; /* Taille de police encore plus petite mais toujours lisible */
+    border-radius: 6px; /* Bordure légèrement réduite pour un look compact */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1), 0 1px 2px rgba(0, 0, 0, 0.05); /* Ombre réduite pour correspondre à l’écran plus petit */
+  }
+}
+
+
+/* 📱 Media queries pour les petits écrans */
+@media (max-width: 768px) {
+    /* 🎯 Adaptation du titre principal sur mobile */
+    h1 {
+        font-size: 2rem;
+    }
+
+    /* 🗂️ Réduction des marges et du padding pour les sections sur mobile */
+    section {
+        margin: 10px;
+        padding: 15px;
+    }
+
+    /* 🖋️ Adaptation des sous-titres pour mobile */
+    h2 {
+        font-size: 1.3rem;
+    }
+
+    /* 🔗 Réduction de la taille des éléments de la liste sur mobile */
+    ul li {
+        font-size: 0.9rem;
+    }
+
+    /* 📐 Réduction des icônes pour mobile */
+    button i.fas {
+        font-size: 0.9rem;
+    }
+}
